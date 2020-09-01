@@ -1,0 +1,46 @@
+% Comienzo preámbulo
+\documentclass[letterpaper,11pt]{report}
+% Paquetes Necesarios:
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+
+%% Paquetes opcionales 
+% Para poder incluir imágenes
+\usepackage{graphicx}
+% Para elegir la carpeta donde las imagenes estaran almacenadas
+\graphicspath{ {imagenes/} }
+% Mejor control de la pagina, margenes etc
+\usepackage[letterpaper, margin=2.5cm]{geometry}
+% Para tener acceso al lorem ipsum
+\usepackage{lipsum}
+
+% Opciones propias que tiene una clase report
+\title{Clase 1, mi segundo \LaTeX }
+\author{RERS}
+
+% comienzo oficial del documento: 
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Resumen del libro o epilogo que se yo...
+\end{abstract} 
+\newpage
+
+\tableofcontents
+\newpage
+
+\chapter{Introducción}
+\section{Sobre \LaTeX}
+\lipsum 
+\begin{itemize}
+\item Ítem Lista 1
+\item Ítem Lista 2
+\end{itemize}
+\begin{enumerate}
+\item Lista enumerada
+\item Este es el numero 2
+\end{enumerate}
+% \includegraphics{flor}
+\end{document}
